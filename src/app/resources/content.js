@@ -1,27 +1,27 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Tamanna",
+  lastName: "Mishra",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Machine Learning/Software Engineer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/London", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi", "Japanese"], // optional: Leave the array empty if you don't want to display languages
 };
 
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
-};
+// const newsletter = {
+//   display: true,
+//   title: <>Subscribe to {person.firstName}'s Newsletter</>,
+//   description: (
+//     <>
+//       I occasionally write about design, technology, and share thoughts on the intersection of
+//       creativity and engineering.
+//     </>
+//   ),
+// };
 
 const social = [
   // Links are automatically displayed.
@@ -29,22 +29,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Tammy2004/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/tamanna-mishra/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:mishratamanna3@gmail.com",
   },
 ];
 
@@ -52,11 +47,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>ML/Software Engineer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Tamanna, a student at The University of Sheffield, where I'm studying
+      Computer Science (AI).<br /> I'm currently on placement with <InlineCode>AMRC </InlineCode> 
+       as an Assistant Project Engineer.
     </>
   ),
 };
@@ -81,9 +77,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Tamanna is currently an Assistant Project Engineer at AMRC, where she is involved in
+        various projects related to machine learning and software development. She is also an undergraduate
+        student at The University of Sheffield, pursuing a degree in Computer Science with a focus on
+        artificial intelligence. Tamanna has a strong interest in the intersection of technology and healthcare.
       </>
     ),
   },
@@ -138,12 +135,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Sheffield",
+        description: <>Studied computer science.</>,
       },
     ],
   },
@@ -282,4 +275,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, blog, work, gallery };
