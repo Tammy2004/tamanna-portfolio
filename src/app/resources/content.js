@@ -112,7 +112,7 @@ const about = {
               Developed a website for the University of Sheffield's Department of Electric and Electronic Engineering,
               showcasing the department's research and projects. The website was built using Google Sites and included
               features such as a project gallery, faculty profiles, and a CTA to subscribe to the department's newsletter.
-              <b>Tools used:</b> Google Sites, HTML, CSS.
+              <br /><b>Tools used:</b> Google Sites, HTML, CSS.
             </>,
             <>
               Collaborated with faculty members to gather content and design the website layout, ensuring that it met the
@@ -153,17 +153,11 @@ const about = {
           },
           description: [
             <>
-              - Currently a placement student going on to final year in 2025-26.
-              <br />
-              - I specialize in machine learning and software engineering, with a focus on developing innovative solutions to real-world problems.
-              <br />
-              - My coursework includes advanced topics in artificial intelligence, data science, and software development methodologies.
-              <br />
-              - I have also completed projects in areas such as computer vision, natural language processing, and web development.
-              <br />
-              - I am actively involved in research projects and internships, where I apply my skills to practical applications.
-              <br />
-              - Interested in the intersection of technology and healthcare.
+              I am a placement student entering my final year in 2025-26, specializing in machine learning
+              <br />and software engineering. My academic background includes advanced coursework in AI, data science, 
+              <br />and software development, complemented by hands-on projects in computer vision, NLP, and 
+              <br />web development. Through research and internships, I apply my skills to real-world problems, 
+              <br />with a particular interest in the intersection of technology and healthcare.
             </>
           ],
         },
