@@ -1,5 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
-import { techSkills } from "@/components/TechIcons";
+import { techSkills } from "@/components/Icons";
 
 
 const person = {
