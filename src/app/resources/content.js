@@ -75,7 +75,6 @@ const about = {
     ),
   },
   work: {
-    work: {
       display: true, // set to false to hide this section
       title: "Work Experience",
       experiences: [
@@ -152,7 +151,7 @@ const about = {
               "AI Group Project",
             ],
           },
-          description: (
+          description: [
             <>
               - Currently a placement student going on to final year in 2025-26.
               <br />
@@ -166,7 +165,7 @@ const about = {
               <br />
               - Interested in the intersection of technology and healthcare.
             </>
-          ),
+          ],
         },
       ],
     },
