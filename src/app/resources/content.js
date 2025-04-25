@@ -112,7 +112,7 @@ const about = {
               Developed a website for the University of Sheffield's Department of Electric and Electronic Engineering,
               showcasing the department's research and projects. The website was built using Google Sites and included
               features such as a project gallery, faculty profiles, and a CTA to subscribe to the department's newsletter.
-              <br /> <b>Tools used:</b> Google Sites, HTML, CSS.
+              <b>Tools used:</b> Google Sites, HTML, CSS.
             </>,
             <>
               Collaborated with faculty members to gather content and design the website layout, ensuring that it met the
@@ -209,6 +209,13 @@ const about = {
   },
 };
 
+const blog = {
+  label: "Blog",
+  title: "Writing about design and tech...",
+  description: `Read what ${person.name} has been up to recently`,
+  // Create new blog posts by adding a new .mdx file to app/blog/posts
+  // All posts will be listed on the /blog route
+};
 
 const work = {
   label: "Work",
@@ -222,7 +229,7 @@ const gallery = {
   label: "Gallery",
   title: "My photo gallery",
   description: `A photo collection by ${person.name}`,
-
+  // Images from https://pexels.com
   images: [
     {
       src: "/images/gallery/img-01.jpg",
@@ -297,4 +304,4 @@ const gallery = {
   ],
 };
 
-export { person, social, home, about, work, gallery };
+export { person, social, home, about, blog, work, gallery };
