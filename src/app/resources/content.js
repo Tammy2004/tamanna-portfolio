@@ -1,4 +1,6 @@
 import { InlineCode } from "@/once-ui/components";
+import { techSkills } from "@/components/TechIcons";
+
 
 const person = {
   firstName: "Tamanna",
@@ -46,6 +48,14 @@ const home = {
     </>
   ),
 };
+
+const techSkillsContent = techSkills.map((skill) => (
+  <div key={skill.title}>
+    <h3>{skill.title}</h3>
+    {skill.description}
+  </div>
+));
+
 
 const about = {
   label: "About",
@@ -154,10 +164,10 @@ const about = {
           description: [
             <>
               I am a placement student entering my final year in 2025-26, specializing in machine learning
-              <br />and software engineering. My academic background includes advanced coursework in AI, data science, 
-              <br />and software development, complemented by hands-on projects in computer vision, NLP, and 
-              <br />web development. Through research and internships, I apply my skills to real-world problems, 
-              <br />with a particular interest in the intersection of technology and healthcare.
+              and software engineering. My academic background includes advanced coursework in AI, data science, 
+              and software development, complemented by hands-on projects in computer vision, NLP, and 
+              web development. Through research and internships, I apply my skills to real-world problems, 
+              with a particular interest in the intersection of technology and healthcare.
             </>
           ],
         },
@@ -165,41 +175,8 @@ const about = {
     },
     technical: {
       display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
+      title: "Technical skills",
+      skills: techSkillsContent,
   },
 };
 
