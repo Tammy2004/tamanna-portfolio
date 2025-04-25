@@ -12,16 +12,6 @@ const person = {
   languages: ["English", "Hindi", "Japanese"], // optional: Leave the array empty if you don't want to display languages
 };
 
-// const newsletter = {
-//   display: true,
-//   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-//   description: (
-//     <>
-//       I occasionally write about design, technology, and share thoughts on the intersection of
-//       creativity and engineering.
-//     </>
-//   ),
-// };
 
 const social = [
   // Links are automatically displayed.
@@ -85,63 +75,103 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
-    experiences: [
-      {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
-        achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
+    work: {
+      display: true, // set to false to hide this section
+      title: "Work Experience",
+      experiences: [
+        {
+          company: "Advanced Manufacturing Research Centre (AMRC)",
+          timeframe: "2024 - Present (Internship)",
+          role: "Assistant Project Engineer",
+          achievements: [
+            <>
+              Developed a machine learning model (Object Detection + Pose Estimation) to develop a real-time PPE compliance system in
+              a manufacturing environment with 0.71 mAP on RTSP stream and webcam inputs.
+              <b>Tools used:</b> Python, Tensorflow, OpenCV, YOLOv8/11, PyTorch.
+            </>,
+            <>
+              Collaborated with a project engineer to research and write up a trade study report on the feasibility of using edge technologies to
+              improve the efficiency of the manufacturing process for a client company. The report was well-received and led to further discussions
+              with the client about working together on a project to implement the proposed solutions.
+              <b>Tools used:</b> Microsoft Word.
+            </>,
+            <>
+              Collaborated with a senior software engineer to design and implement a dashboard for organisational chart
+              visualisation of the AMRC along with adding a feature to generate a difference report indicating new personnel
+              to be added to the system and old staff to be removed, improving data accessibility and decision-making processes.
+              <b>Tools used:</b> Vue, Next.js, Bulma CSS, Figma.
+            </>,
+          ],
+          images: [],
+        },
+        {
+          company: "The University of Sheffield",
+          timeframe: "Summer 2023",
+          role: "Website Developer",
+          achievements: [
+            <>
+              Developed a website for the University of Sheffield's Department of Electric and Electronic Engineering,
+              showcasing the department's research and projects. The website was built using Google Sites and included
+              features such as a project gallery, faculty profiles, and a CTA to subscribe to the department's newsletter.
+              <b>Tools used:</b> Google Sites, HTML, CSS.
+            </>,
+            <>
+              Collaborated with faculty members to gather content and design the website layout, ensuring that it met the
+              department's branding guidelines and effectively communicated its mission and values.
+            </>,
+          ],
+          images: [],
+        },
+      ],
+    },
+    studies: {
+      display: true, // set to false to hide this section
+      title: "Studies",
+      institutions: [
+        {
+          name: "University of Sheffield",
+          degree: "BSc Computer Science (AI)",
+          timeframe: "2022 - 2026",
+          modules: {
+            "First Year (2:1)": [
+              "Introduction to Software Engineering",
+              "Foundations of Computer Science",
+              "Java Programming",
+              "Machines and Intelligence",
+              "Devices and Networks",
+              "Web and Internet Technology",
+              "Introduction to Algorithms and Data Structures",
+            ],
+            "Second Year (2:1)": [
+              "Data Driven Computing",
+              "Systems Design and Security",
+              "Functional Programming",
+              "Robotics",
+              "Automata, Computation and Complexity",
+              "Logic in Computer Science",
+              "AI Group Project",
+            ],
           },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Sheffield",
-        description: <>Studied computer science.</>,
-      },
-    ],
-  },
-  technical: {
-    display: true, // set to false to hide this section
+          description: (
+            <>
+              - Currently a placement student going on to final year in 2025-26.
+              <br />
+              - I specialize in machine learning and software engineering, with a focus on developing innovative solutions to real-world problems.
+              <br />
+              - My coursework includes advanced topics in artificial intelligence, data science, and software development methodologies.
+              <br />
+              - I have also completed projects in areas such as computer vision, natural language processing, and web development.
+              <br />
+              - I am actively involved in research projects and internships, where I apply my skills to practical applications.
+              <br />
+              - Interested in the intersection of technology and healthcare.
+            </>
+          ),
+        },
+      ],
+    },
+    technical: {
+      display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
