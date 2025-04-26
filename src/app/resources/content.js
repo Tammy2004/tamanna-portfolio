@@ -90,19 +90,19 @@ const about = {
             <>
               Developed a machine learning model (Object Detection + Pose Estimation) to develop a real-time PPE compliance system in
               a manufacturing environment with 0.71 mAP on RTSP stream and webcam inputs.
-              <br /><b>Tools used:</b> Python, Tensorflow, OpenCV, YOLOv8/11, PyTorch.
+              <br /><b>Tools used:</b> <i>Python, Tensorflow, OpenCV, YOLOv8/11, PyTorch.</i> 
             </>,
             <>
               Collaborated with a project engineer to research and write up a trade study report on the feasibility of using edge technologies to
               improve the efficiency of the manufacturing process for a client company. The report was well-received and led to further discussions
               with the client about working together on a project to implement the proposed solutions.
-              <br /><b>Tools used:</b> Microsoft Word.
+              <br /><b>Tools used:</b> <i>Microsoft Word. </i>
             </>,
             <>
               Collaborated with a senior software engineer to design and implement a dashboard for organisational chart
               visualisation of the AMRC along with adding a feature to generate a difference report indicating new personnel
               to be added to the system and old staff to be removed, improving data accessibility and decision-making processes.
-              <br /><b>Tools used:</b> Vue, Next.js, Bulma CSS, Figma.
+              <br /><b>Tools used:</b> <i> Vue, Next.js, Bulma CSS, Figma.</i>
             </>,
           ],
           images: [],
@@ -116,7 +116,7 @@ const about = {
               Developed a website for the University of Sheffield's Department of Electric and Electronic Engineering,
               showcasing the department's research and projects. The website was built using Google Sites and included
               features such as a project gallery, faculty profiles, and a CTA to subscribe to the department's newsletter.
-              <br /><b>Tools used:</b> Google Sites, HTML, CSS.
+              <br /><b>Tools used:</b> <i>Google Sites, HTML, CSS.</i>
             </>,
             <>
               Collaborated with faculty members to gather content and design the website layout, ensuring that it met the
@@ -159,8 +159,7 @@ const about = {
             <>
               I am a placement student entering my final year in 2025-26, specializing in machine learning
               and software engineering. My academic background includes advanced coursework in AI, data science, 
-              and software development, complemented by hands-on projects in computer vision, NLP, and 
-              web development. Through research and internships, I apply my skills to real-world problems, 
+              and software development. Through research and internships, I apply my skills to real-world problems, 
               with a particular interest in the intersection of technology and healthcare.
             </>
           ],
