@@ -35,19 +35,23 @@ import { SiGoogleappsscript } from "react-icons/si";
 
 
 
-const createIconBlock = (title: string, icons: JSX.Element[]) => (
-  {
-    title,
-    description: (
-      <div className="flex flex-wrap gap-4 text-3xl items-center">
+const createIconBlock = (title: string, icons: JSX.Element[]) => ({
+  title: (
+    <div className="flex items-center gap-4">
+      <span className="text-xl font-semibold">{title}</span>
+      <div className="flex flex-wrap gap-3 text-3xl items-center">
         {icons.map((icon, i) => (
-          <div key={i} className="hover:scale-110 transition-transform">{icon}</div>
+          <div key={i} className="hover:scale-110 transition-transform">
+            {icon}
+          </div>
         ))}
       </div>
-    ),
-    images: [],
-  }
-);
+    </div>
+  ),
+  description: null,
+  images: [],
+});
+
 
 export const techSkills = [
   createIconBlock("Programming Languages", [

@@ -306,9 +306,11 @@ export default function About() {
                 <Column key={`${skill.title}-${index}`} fillWidth gap="8">
                   {/* Title and icons side-by-side, responsive */}
                   <Flex wrap={true} vertical="center" gap="12">
-                    <Text variant="heading-strong-l" style={{ whiteSpace: "nowrap" }}>
-                      {skill.title}
-                    </Text>
+                  <Text as="div" variant="heading-strong-l">
+                    {skill.title}
+                  </Text>
+
+
                     <Flex gap="8" wrap vertical="center">
                       {skill.images?.map((image, idx) => (
                         <Flex
