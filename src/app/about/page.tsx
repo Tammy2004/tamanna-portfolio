@@ -306,8 +306,8 @@ export default function About() {
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill.title}-${index}`} fillWidth gap="8">
                     {/* Title and icons side-by-side, responsive */}
-                    <Flex wrap={true} vertical="center" gap="12" justifyContent="flex-start" alignItems="center">
-                      <Text as="div" variant="heading-strong-l">
+                    <Flex wrap={true} vertical="center" gap="12" horizontal="start" align="center">
+                    <Text as="div" variant="heading-strong-l">
                         {skill.title}
                       </Text>
 
