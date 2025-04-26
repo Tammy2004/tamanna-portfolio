@@ -32,6 +32,7 @@ import {
 import { FaJava, FaWindows } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { SiGoogleappsscript } from "react-icons/si";
+import React from "react";
 
 
 
@@ -40,7 +41,7 @@ const createIconBlock = (title: string, icons: JSX.Element[]) => (
     title,
     description: icons.map((icon, i) => (
       <div key={i} className="hover:scale-110 transition-transform text-5xl">
-        {icon}
+        {React.cloneElement(icon, { size: "3em" })}
       </div>
     )),
     images: [],
