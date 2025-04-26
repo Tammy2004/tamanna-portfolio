@@ -302,40 +302,43 @@ export default function About() {
                 {about.technical.title}
               </Heading>
               <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {skill.description}
+              {about.technical.skills.map((skill, index) => (
+                <Column key={`${skill.title}-${index}`} fillWidth gap="8">
+                  {/* Title and icons side-by-side, responsive */}
+                  <Flex wrap={true} vertical="center" gap="12">
+                    <Text variant="heading-strong-l" style={{ whiteSpace: "nowrap" }}>
+                      {skill.title}
                     </Text>
-                    {skill.images && skill.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {skill.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
+                    <Flex gap="8" wrap vertical="center">
+                      {skill.images?.map((image, idx) => (
+                        <Flex
+                          key={idx}
+                          border="neutral-medium"
+                          radius="m"
+                          minWidth="32"
+                          height="32"
+                          style={{ overflow: "hidden" }}
+                        >
+                          <SmartImage
+                            enlarge
                             radius="m"
+                            sizes="32"                              
                             //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <SmartImage
-                              enlarge
-                              radius="m"
+                            alt={image.alt}
                               //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
-                  </Column>
-                ))}
+                            src={image.src}
+                          />
+                        </Flex>
+                      ))}
+                    </Flex>
+                  </Flex>
+
+                  {/* Skill description */}
+                  <Text variant="body-default-m" onBackground="neutral-weak">
+                    {skill.description}
+                  </Text>
+                </Column>
+              ))}
               </Column>
             </>
           )}
