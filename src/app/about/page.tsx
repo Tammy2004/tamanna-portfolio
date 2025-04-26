@@ -306,7 +306,7 @@ export default function About() {
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Flex gap="8" vertical="center" wrap>
+                    <Flex gap="8" vertical="center" direction="row" wrap>
                       {skill.description}
                     </Flex>
                     {skill.images && skill.images.length > 0 && (
