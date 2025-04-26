@@ -39,7 +39,7 @@ const createIconBlock = (title: string, icons: JSX.Element[]) => (
   {
     title,
     description: icons.map((icon, i) => (
-      <div key={i} className="hover:scale-110 transition-transform text-3xl">
+      <div key={i} className="hover:scale-110 transition-transform text-5xl">
         {icon}
       </div>
     )),
