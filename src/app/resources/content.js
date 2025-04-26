@@ -49,12 +49,6 @@ const home = {
   ),
 };
 
-const techSkillsContent = techSkills.map((skill) => (
-  <div key={skill.title}>
-    <h3>{skill.title}</h3>
-    {skill.description}
-  </div>
-));
 
 
 const about = {
@@ -176,7 +170,7 @@ const about = {
     technical: {
       display: true, // set to false to hide this section
       title: "Technical skills",
-      skills: techSkillsContent,
+      skills: techSkills,
   },
 };
 
