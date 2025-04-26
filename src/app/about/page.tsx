@@ -14,6 +14,7 @@ import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
+import { techSkills } from "@/components/Icons";
 
 export async function generateMetadata() {
   const title = about.title;
@@ -302,45 +303,31 @@ export default function About() {
                 {about.technical.title}
               </Heading>
               <Column fillWidth gap="l">
-              {about.technical.skills.map((skill, index) => (
-                <Column key={`${skill.title}-${index}`} fillWidth gap="8">
-                  {/* Title and icons side-by-side, responsive */}
-                  <Flex wrap={true} vertical="center" gap="12">
-                  <Text as="div" variant="heading-strong-l">
-                    {skill.title}
-                  </Text>
+                {about.technical.skills.map((skill, index) => (
+                  <Column key={`${skill.title}-${index}`} fillWidth gap="8">
+                    {/* Title and icons side-by-side, responsive */}
+                    <Flex wrap={true} vertical="center" gap="12" justifyContent="flex-start" alignItems="center">
+                      <Text as="div" variant="heading-strong-l">
+                        {skill.title}
+                      </Text>
 
-
-                    <Flex gap="8" wrap vertical="center">
-                      {skill.images?.map((image, idx) => (
-                        <Flex
-                          key={idx}
-                          border="neutral-medium"
-                          radius="m"
-                          minWidth="32"
-                          height="32"
-                          style={{ overflow: "hidden" }}
-                        >
-                          <SmartImage
-                            enlarge
-                            radius="m"
-                            sizes="32"                              
-                            //@ts-ignore
-                            alt={image.alt}
-                              //@ts-ignore
-                            src={image.src}
-                          />
-                        </Flex>
-                      ))}
+                      {/* Render the icons */}
+                      <div className="flex flex-row flex-wrap items-center gap-3 text-3xl">
+                        {techSkills
+                          .find((tech) => tech.title === skill.title)?.description.props.children.map((icon, idx) => (
+                            <div key={idx} className="hover:scale-110 transition-transform">
+                              {icon}
+                            </div>
+                          ))}
+                      </div>
                     </Flex>
-                  </Flex>
 
-                  {/* Skill description */}
-                  <Text variant="body-default-m" onBackground="neutral-weak">
-                    {skill.description}
-                  </Text>
-                </Column>
-              ))}
+                    {/* Skill description */}
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {skill.description}
+                    </Text>
+                  </Column>
+                ))}
               </Column>
             </>
           )}
