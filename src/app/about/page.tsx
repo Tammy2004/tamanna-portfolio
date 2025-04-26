@@ -304,28 +304,37 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill.title}-${index}`} fillWidth gap="8">
-                    {/* Title and icons side-by-side, responsive */}
-                    <Flex wrap={true} vertical="center" gap="12" horizontal="start" align="center">
-                    <Text as="div" variant="heading-strong-l">
-                        {skill.title}
-                      </Text>
-
-                      {/* Render the icons */}
-                      <div className="flex flex-row flex-wrap items-center gap-3 text-3xl">
-                        {techSkills
-                          .find((tech) => tech.title === skill.title)?.description.props.children.map((icon, idx) => (
-                            <div key={idx} className="hover:scale-110 transition-transform">
-                              {icon}
-                            </div>
-                          ))}
-                      </div>
-                    </Flex>
-
-                    {/* Skill description */}
+                  <Column key={`${skill}-${index}`} fillWidth gap="4">
+                    <Text variant="heading-strong-l">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
+                    {skill.images && skill.images.length > 0 && (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap>
+                        {skill.images.map((image, index) => (
+                          <Flex
+                            key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            //@ts-ignore
+                            minWidth={image.width}
+                            //@ts-ignore
+                            height={image.height}
+                          >
+                            <SmartImage
+                              enlarge
+                              radius="m"
+                              //@ts-ignore
+                              sizes={image.width.toString()}
+                              //@ts-ignore
+                              alt={image.alt}
+                              //@ts-ignore
+                              src={image.src}
+                            />
+                          </Flex>
+                        ))}
+                      </Flex>
+                    )}
                   </Column>
                 ))}
               </Column>
