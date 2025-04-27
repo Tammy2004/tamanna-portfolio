@@ -64,18 +64,17 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendar.app.google/AM9fqciwSmyCeAVZ6",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Tamanna is currently an Assistant Project Engineer at AMRC, where she is involved in
-        various projects related to machine learning and software development. She is also an undergraduate
-        student at The University of Sheffield, pursuing a degree in Computer Science with a focus on
-        artificial intelligence. Tamanna has a strong interest in the intersection of technology and healthcare.
-      </>
+        Tamanna is an Assistant Project Engineer at AMRC, working on machine learning and 
+        software development projects. She is also a Computer Science undergraduate at The 
+        University of Sheffield, specializing in artificial intelligence, with a strong 
+        interest in technology's impact on healthcare.</>
     ),
   },
   work: {
@@ -173,19 +172,20 @@ const about = {
   },
 };
 
-const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+const portfolio = {
+  label: "Portfolio",
+  title: "Showcase",
+  description: `A collection of ${person.name}s work, including projects and skills I 
+  have acquired`,
+  // Create new portfolio posts by adding a new .mdx file to app/portfolio/posts
+  // All posts will be listed on the /portfolio route
 };
 
 const work = {
   label: "Work",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // Create new project pages by adding a new .mdx file to app/portfolio/posts
   // All projects will be listed on the /home and /work routes
 };
 
@@ -268,4 +268,4 @@ const gallery = {
   ],
 };
 
-export { person, social, home, about, blog, work, gallery };
+export { person, social, home, about, portfolio, work, gallery };

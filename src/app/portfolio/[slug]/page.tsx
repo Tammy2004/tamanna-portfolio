@@ -7,21 +7,21 @@ import { person } from "@/app/resources/content";
 import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 
-interface BlogParams {
+interface portfolioParams {
   params: {
     slug: string;
   };
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "blog", "posts"]);
+  const posts = getPosts(["src", "app", "portfolio", "posts"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-export function generateMetadata({ params: { slug } }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slug);
+export function generateMetadata({ params: { slug } }: portfolioParams) {
+  let post = getPosts(["src", "app", "portfolio", "posts"]).find((post) => post.slug === slug);
 
   if (!post) {
     return;
@@ -45,7 +45,7 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
       description,
       type: "article",
       publishedTime,
-      url: `https://${baseURL}/blog/${post.slug}`,
+      url: `https://${baseURL}/portfolio/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -61,8 +61,8 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
   };
 }
 
-export default function Blog({ params }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === params.slug);
+export default function portfolio({ params }: portfolioParams) {
+  let post = getPosts(["src", "app", "portfolio", "posts"]).find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
@@ -89,7 +89,7 @@ export default function Blog({ params }: BlogParams) {
             image: post.metadata.image
               ? `https://${baseURL}${post.metadata.image}`
               : `https://${baseURL}/og?title=${post.metadata.title}`,
-            url: `https://${baseURL}/blog/${post.slug}`,
+            url: `https://${baseURL}/portfolio/${post.slug}`,
             author: {
               "@type": "Person",
               name: person.name,

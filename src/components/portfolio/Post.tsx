@@ -18,7 +18,7 @@ export default function Post({ post, thumbnail }: PostProps) {
       className={styles.hover}
       unstyled
       key={post.slug}
-      href={`/blog/${post.slug}`}
+      href={`/portfolio/${post.slug}`}
     >
       <Flex
         position="relative"

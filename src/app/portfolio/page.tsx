@@ -1,12 +1,12 @@
 import { Column, Flex, Heading } from "@/once-ui/components";
 // import { Mailchimp } from "@/components";
-import { Posts } from "@/components/blog/Posts";
+import { Posts } from "@/components/portfolio/Posts";
 import { baseURL } from "@/app/resources";
-import { blog, person } from "@/app/resources/content";
+import { portfolio, person } from "@/app/resources/content";
 
 export async function generateMetadata() {
-  const title = blog.title;
-  const description = blog.description;
+  const title = portfolio.title;
+  const description = portfolio.description;
   const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
   return {
@@ -42,11 +42,11 @@ export default function Blog() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Blog",
-            headline: blog.title,
-            description: blog.description,
-            url: `https://${baseURL}/blog`,
-            image: `${baseURL}/og?title=${encodeURIComponent(blog.title)}`,
+            "@type": "Portfolio",
+            headline: portfolio.title,
+            description: portfolio.description,
+            url: `https://${baseURL}/portfolio`,
+            image: `${baseURL}/og?title=${encodeURIComponent(portfolio.title)}`,
             author: {
               "@type": "Person",
               name: person.name,
@@ -59,7 +59,7 @@ export default function Blog() {
         }}
       />
       <Heading marginBottom="l" variant="display-strong-s">
-        {blog.title}
+        {portfolio.title}
       </Heading>
       <Column fillWidth flex={1}>
         <Posts range={[1, 3]} thumbnail />
