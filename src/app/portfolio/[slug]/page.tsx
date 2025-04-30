@@ -86,7 +86,7 @@ export default function portfolio({ params }: portfolioParams) {
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
-            image: post.metadata.image
+            image: post.metadata.images
               ? `https://${baseURL}${post.metadata.image}`
               : `https://${baseURL}/og?title=${post.metadata.title}`,
             url: `https://${baseURL}/portfolio/${post.slug}`,
@@ -97,7 +97,7 @@ export default function portfolio({ params }: portfolioParams) {
           }),
         }}
       />
-      <Button href="/blog" weight="default" variant="tertiary" size="s" prefixIcon="chevronLeft">
+      <Button href="/portfolio" weight="default" variant="tertiary" size="s" prefixIcon="chevronLeft">
         Posts
       </Button>
       <Heading variant="display-strong-s">{post.metadata.title}</Heading>
