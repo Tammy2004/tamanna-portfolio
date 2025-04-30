@@ -9,7 +9,7 @@ interface PostsProps {
 }
 
 export function Posts({ range, columns = "1", thumbnail = false }: PostsProps) {
-  let allportfolios = getPosts(["src", "app", "portfolio", "posts"]);
+  let allportfolios = getPosts(["src", "app", "work", "projects"]);
 
   const sortedportfolios = allportfolios.sort((a, b) => {
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
