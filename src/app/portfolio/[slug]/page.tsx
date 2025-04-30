@@ -21,7 +21,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 }
 
 export function generateMetadata({ params: { slug } }: portfolioParams) {
-  let post = getPosts(["src", "app", "portfolio", "posts"]).find((post) => post.slug === slug);
+  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slug);
 
   if (!post) {
     return;
@@ -62,7 +62,7 @@ export function generateMetadata({ params: { slug } }: portfolioParams) {
 }
 
 export default function portfolio({ params }: portfolioParams) {
-  let post = getPosts(["src", "app", "portfolio", "posts"]).find((post) => post.slug === params.slug);
+  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
