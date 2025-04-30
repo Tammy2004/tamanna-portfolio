@@ -10,8 +10,11 @@ interface PostProps {
 }
 
 export default function Post({ post, thumbnail }: PostProps) {
-  const tags = post.metadata.tag.split(",").map((tag: string) => tag.trim());
-
+  const tagData = post.metadata.tag;
+  const tags = typeof tagData === "string"
+    ? tagData.split(",").map((tag) => tag.trim())
+    : [];
+  
   return (
     <SmartLink
       fillWidth
