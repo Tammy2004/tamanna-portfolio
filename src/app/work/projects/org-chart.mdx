@@ -7,3 +7,32 @@ images:
 summary: "Every career is a journey, filled with challenges, growth, and those significant moments that mark a shift in our path."
 tag: "Journal"
 ---
+very software project brings with it a unique set of challenges, especially when trying to bridge the gap between dynamic data and clear visual representation. In this post, I’m excited to share a recent project where I developed an organisational chart web application using Vue.js, Bulma CSS, and the Google Sheets API. This project not only enhanced my frontend development skills but also strengthened my understanding of data integration and visual design.
+
+## **Project Overview**
+The goal was to create a dynamic and easily updatable organisational chart for a team or company, where data could be edited in a Google Sheet and instantly reflected on a live website. This approach allows non-technical users to maintain the chart content without touching the codebase.
+
+## **Why Vue.js and Bulma?**
+I chose Vue.js for its reactive and component-driven architecture, which made it easy to create modular and reusable components for each role in the organisation. Bulma CSS, with its simple and responsive design utilities, helped in structuring the layout of the chart cleanly and effectively without writing custom CSS from scratch.
+
+## **Google Sheets as a Data Source**
+Using the Google Sheets API, I was able to fetch structured data like names, roles, departments, and reporting lines directly from a spreadsheet. This data was then transformed into a tree-like structure in Vue and rendered dynamically.
+
+Working with the API taught me how to handle asynchronous data loading, authentication scopes, and data normalization. I also implemented caching mechanisms to reduce unnecessary API calls and enhance performance.
+
+<CodeBlock className="my-24" compact codeInstances={[ { code: async function fetchSheetData(sheetId) { const response = await fetch(\https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/ChartData?key=YOUR_API_KEY`); const data = await response.json(); return transformToHierarchy(data.values); }`, label: 'Google Sheets API', language: 'ts' }, ]} copyButton />
+
+## **Challenges and Learnings**
+One of the key challenges was maintaining the hierarchical structure of the chart, especially when roles were nested deeply or when the reporting lines weren’t explicitly linear. I learned to process flat data into a recursive tree structure and represent it using Vue’s recursive components.
+
+Additionally, styling and aligning elements in a tree layout using pure CSS was tricky. I explored several layout strategies before landing on a visually clean and mobile-responsive design with help from Bulma’s Flexbox utilities.
+
+## **Impact and Future Improvements**
+This project has been incredibly useful as a template for internal tools and dashboards. By allowing data to live in a Google Sheet, it becomes more accessible and less error-prone for teams without technical backgrounds.
+
+Moving forward, I’d like to enhance the chart with drag-and-drop functionality, zooming/panning interactions, and possibly migrate to D3.js for more advanced visualization needs.
+
+## **Final Thoughts**
+This project reinforced my belief that simplicity and modularity are key in building maintainable tools. Vue’s component system, combined with Bulma’s lightweight CSS framework and the flexibility of the Google Sheets API, made for a powerful combination in bringing this idea to life.
+
+If you're looking to build a dynamic charting tool powered by user-editable data, I highly recommend exploring this stack. Feel free to reach out if you'd like to learn more or collaborate on similar ideas!

@@ -3,6 +3,50 @@ title: "Safety Equipment Detection System using YOLO (object detection and pose 
 publishedAt: "2025-04-28"
 images:
   - "/images/projects/project-01/PPE-Detection-Easyflow.png"
-summary: "Every career is a journey, filled with challenges, growth, and those significant moments that mark a shift in our path."
+summary: "A deep learning-based safety compliance system using YOLO and pose estimation to detect personal protective equipment (PPE) such as helmets, vests, and goggles."
 tag: "Journal"
 ---
+
+Developing an AI-powered PPE compliance system has been one of the most rewarding technical challenges in my recent work. This project combined my passion for machine learning, computer vision, and real-world applications in safety-critical environments.
+
+## Reflecting on the Project So Far
+
+The idea stemmed from the need to monitor workplace safety in industrial settings. I built a deep learning pipeline capable of detecting whether individuals were wearing safety equipment like helmets, vests, and safety goggles. The system combined object detection (YOLOv8) with pose estimation to ensure that PPE wasn’t just present in the scene — but actually being worn.
+
+## Key Components of the System
+
+Using a custom dataset, I annotated images to label various PPE items and trained the YOLOv8 model to detect them accurately under different lighting and angles. To increase robustness, I applied data augmentation and used Euclidean distance checks between the detected object and predicted keypoints (e.g., helmet near head, goggles near eyes).
+
+<CodeBlock className="my-24"
+    compact
+    codeInstances={[
+        {
+            code: 'if (euclideanDistance(helmetBox, headKeypoint) < threshold) {\n    return "Helmet is being worn";\n}',
+            label: 'Python',
+            language: 'python'
+        },
+    ]}
+    copyButton
+/>
+
+## What This Project Represents
+
+This system represents a leap in combining academic research and practical problem-solving. It showed me how pose estimation and object detection can work in tandem for intelligent rule-based compliance checks — a concept I hadn't implemented before. It also emphasized how important thoughtful data annotation and model tuning are to downstream accuracy.
+
+## The Challenges That Shaped the Solution
+
+A major challenge was ensuring accurate differentiation between PPE that was worn versus merely present. Some detections failed when objects were occluded or improperly labeled. Iterative retraining, cleaning annotations, and refining the bounding-box validation logic were all key in overcoming these issues.
+
+## Embracing Technical Growth
+
+Beyond detection, I also developed a GUI that allowed users to upload video footage or use live cameras, generating real-time compliance results. This frontend-backend integration pushed me to write modular, scalable code and improved my ability to communicate technical outcomes with non-technical users.
+
+## Gratitude and Acknowledgment
+
+I’m grateful for the feedback I received from mentors and engineers who helped me think through edge cases and guided model debugging. Their insights were instrumental in shaping this project into something functional, reliable, and genuinely useful.
+
+## Looking Ahead
+
+This system has sparked ideas for expanding detection into broader safety contexts — like machinery zones or fire extinguisher placement. It’s also deepened my interest in Edge AI, where real-time inference is crucial. I'm excited to keep evolving this work and exploring the next frontier of safety-focused AI.
+
+Thank you for reading — and stay safe!
