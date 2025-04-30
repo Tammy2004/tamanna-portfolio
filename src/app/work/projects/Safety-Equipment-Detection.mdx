@@ -19,12 +19,18 @@ Using a custom dataset, I annotated images to label various PPE items and traine
 
 <CodeBlock
   className="my-24"
-  code={`
+  codeInstances={[
+    {
+      label: "Python",
+      language: "python",
+      code: `
 if euclideanDistance(helmetBox, headKeypoint) < threshold:
     return 'Helmet is being worn'
-`}
-  language="python"
+`
+    }
+  ]}
 />
+
 
 
 ## What This Project Represents
