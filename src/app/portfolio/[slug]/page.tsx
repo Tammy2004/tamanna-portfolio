@@ -32,10 +32,9 @@ export function generateMetadata({ params: { slug } }: portfolioParams) {
     publishedAt: publishedTime,
     summary: description,
     images,
-    image,
     team,
   } = post.metadata;
-  let ogImage = image ? `https://${baseURL}${image}` : `https://${baseURL}/og?title=${title}`;
+  let ogImage = images ? `https://${baseURL}${images}` : `https://${baseURL}/og?title=${title}`;
 
   return {
     title,
@@ -87,7 +86,7 @@ export default function portfolio({ params }: portfolioParams) {
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.images
-              ? `https://${baseURL}${post.metadata.image}`
+              ? `https://${baseURL}${post.metadata.images}`
               : `https://${baseURL}/og?title=${post.metadata.title}`,
             url: `https://${baseURL}/portfolio/${post.slug}`,
             author: {
