@@ -19,7 +19,10 @@ Using a custom dataset, I annotated images to label various PPE items and traine
 
 <CodeBlock
   className="my-24"
-  code="if euclideanDistance(helmetBox, headKeypoint) < threshold:\n    return 'Helmet is being worn'"
+  code={`
+if euclideanDistance(helmetBox, headKeypoint) < threshold:
+    return 'Helmet is being worn'
+`}
   language="python"
 />
 

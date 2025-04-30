@@ -20,14 +20,23 @@ Using the Google Sheets API, I was able to fetch structured data like names, rol
 
 Working with the API taught me how to handle asynchronous data loading, authentication scopes, and data normalization. I also implemented caching mechanisms to reduce unnecessary API calls and enhance performance.
 
-<CodeBlock className="my-24" 
-compact codeInstances={[ { code: async function fetchSheetData(sheetId) 
-{ const response = await fetch(\https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/ChartData?key=YOUR_API_KEY`); 
-const data = await response.json(); 
-return transformToHierarchy(data.values); 
-}`, label: 'Google Sheets API', language: 'ts' }, ]} 
-
-copyButton />
+<CodeBlock
+  className="my-24"
+  compact
+  codeInstances={[
+    {
+      code: `
+        async function fetchSheetData(sheetId: string) {
+          const response = await fetch(\`https://sheets.googleapis.com/v4/spreadsheets/\${sheetId}/values/ChartData?key=YOUR_API_KEY\`);
+          const data = await response.json();
+          return transformToHierarchy(data.values);
+        }
+      `,
+      label: 'Google Sheets API',
+      language: 'ts',
+    },
+  ]}
+/>
 
 ## **Challenges and Learnings**
 One of the key challenges was maintaining the hierarchical structure of the chart, especially when roles were nested deeply or when the reporting lines weren’t explicitly linear. I learned to process flat data into a recursive tree structure and represent it using Vue’s recursive components.
