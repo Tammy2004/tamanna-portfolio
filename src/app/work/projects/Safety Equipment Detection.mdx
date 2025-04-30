@@ -17,17 +17,12 @@ The idea stemmed from the need to monitor workplace safety in industrial setting
 
 Using a custom dataset, I annotated images to label various PPE items and trained the YOLOv8 model to detect them accurately under different lighting and angles. To increase robustness, I applied data augmentation and used Euclidean distance checks between the detected object and predicted keypoints (e.g., helmet near head, goggles near eyes).
 
-<CodeBlock className="my-24"
-    compact
-    codeInstances={[
-        {
-            code: 'if (euclideanDistance(helmetBox, headKeypoint) < threshold) {\n    return "Helmet is being worn";\n}',
-            label: 'Python',
-            language: 'python'
-        },
-    ]}
-    copyButton
+<CodeBlock
+  className="my-24"
+  code="if euclideanDistance(helmetBox, headKeypoint) < threshold:\n    return 'Helmet is being worn'"
+  language="python"
 />
+
 
 ## What This Project Represents
 
