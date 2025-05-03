@@ -87,10 +87,24 @@ const about = {
           role: "Assistant Project Engineer",
           achievements: [
             <>
-              Developed a machine learning model (Object Detection + Pose Estimation) to develop a real-time PPE compliance system in
-              a manufacturing environment with 0.71 mAP on RTSP stream and webcam inputs.
-              <br /><b>Tools used:</b> <i>Python, Tensorflow, OpenCV, YOLOv8/11, PyTorch.</i> 
-            </>,
+              <div className="p-4 bg-gradient-to-br from-gray-900 to-black text-white rounded-2xl shadow-md">
+              <h3 className="text-lg font-semibold mb-2">PPE Compliance System</h3>
+              <p>
+                Developed a machine learning model <span className="italic">(Object Detection + Pose Estimation)</span> for real-time PPE compliance in a manufacturing environment.
+              </p>
+              <p className="mt-2">
+                Achieved <span className="font-semibold text-green-400">0.71 mAP</span> using RTSP and webcam inputs.
+              </p>
+              <p className="mt-2 font-semibold">Tools used:</p>
+              <div className="flex flex-wrap gap-2 mt-1 text-sm">
+                <span className="bg-blue-600 text-white px-2 py-1 rounded">Python</span>
+                <span className="bg-yellow-400 text-black px-2 py-1 rounded">TensorFlow</span>
+                <span className="bg-gray-700 text-white px-2 py-1 rounded">OpenCV</span>
+                <span className="bg-green-600 text-white px-2 py-1 rounded">YOLOv8/11</span>
+                <span className="bg-red-600 text-white px-2 py-1 rounded">PyTorch</span>
+              </div>
+            </div>
+          </>,
             <>
               Collaborated with a project engineer to research and write up a trade study report on the feasibility of using edge technologies to
               improve the efficiency of the manufacturing process for a client company. The report was well-received and led to further discussions
