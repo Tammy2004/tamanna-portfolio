@@ -225,7 +225,7 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/Istanbul.jpg",
+      src: "/images/gallery/istanbul.jpg",
       alt: "Istanbul, Turkey",
       orientation: "vertical",
     },
@@ -238,11 +238,6 @@ const gallery = {
       src: "/images/gallery/Brookies.jpeg",
       alt: "Brookies - a combination of brownies and cookies.",
       orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
     },
     {
       src: "/images/gallery/Birthday_cake.png",
