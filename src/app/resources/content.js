@@ -210,33 +210,33 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
+      src: "/images/gallery/Tv-awards.webp",
+      alt: "I won the award for the most innovative member among the tech societies!",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/trident_meeting.jpg",
+      alt: "The first meeting of Project Trident, a student-led initiative to develop a submarine to compete in the RoboSub competition.",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/trident_presentation.jpg",
+      alt: "I was presenting to my team (Machine Learning) about Project Trident.",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Istanbul.jpg",
+      alt: "Istanbul, Turkey",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
+      src: "/images/gallery/Birthday cake.png",
+      alt: "A birthday cake I made for my friend.",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
+      src: "/images/gallery/Brookies.jpeg",
+      alt: "Brookies - a combination of brownies and cookies.",
       orientation: "vertical",
     },
     {
@@ -245,38 +245,23 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
+      src: "/images/gallery/Birthday_cake.png",
+      alt: "Cake version of the birthday cake Jellycat for a friend's birthday.",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
+      src: "/images/gallery/Mango.png",
+      alt: "mango Cheesecake",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
+      src: "/images/gallery/Matcha_Cheesecake.png",
+      alt: "Matcha Cheesecake",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
+      src: "/images/gallery/Yule_log.png",
+      alt: "Yule log",
       orientation: "horizontal",
     },
   ],
