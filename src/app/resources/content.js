@@ -262,7 +262,7 @@ const gallery = {
     {
       src: "/images/gallery/cats.jpeg",
       alt: "2 little cats <3",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
     {
       src: "/images/gallery/Matcha_Cheesecake.png",
