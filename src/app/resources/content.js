@@ -250,6 +250,11 @@ const gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/gallery/strawb_cake.jpeg",
+      alt: "Strawberry Pistachio cake",
+      orientation: "vertical",
+    },
+    {
       src: "/images/gallery/Matcha_Cheesecake.png",
       alt: "Matcha Cheesecake",
       orientation: "horizontal",
