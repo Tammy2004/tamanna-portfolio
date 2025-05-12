@@ -255,6 +255,16 @@ const gallery = {
       orientation: "vertical",
     },
     {
+      src: "/images/gallery/kayak.jpeg",
+      alt: "Kayaking in Morocco rivers!",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/cats.jpeg",
+      alt: "2 little cats <3",
+      orientation: "vertical",
+    },
+    {
       src: "/images/gallery/Matcha_Cheesecake.png",
       alt: "Matcha Cheesecake",
       orientation: "horizontal",
