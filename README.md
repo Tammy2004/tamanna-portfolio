@@ -1,89 +1,107 @@
-# **Build your portfolio with Once UI's Magic Portfolio**
+Thanks, Tamanna! Based on your details, here’s a polished, personalized `README.md` for your portfolio repository:
 
-View the [demo here](https://demo.magic-portfolio.com).
+---
 
-![Magic Portfolio](public/images/cover.png)
+```markdown
+# **Tamanna Mishra – Developer Portfolio**
 
+Showcasing my work as a software developer and AI engineer, built with [Once UI](https://once-ui.com) on [Next.js](https://nextjs.org). Designed to be clean, customizable, and scalable for personal use.
 
-# **Getting started**
+![Portfolio Cover](public/images/cover.png)
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+---
 
-**1. Clone the repository**
+## 🚀 Getting Started
+
+To run this project locally, ensure you have **Node.js v18.17+** installed.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 ```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
 
-**2. Install dependencies**
-```
+### 2. Install dependencies
+```bash
 npm install
 ```
 
-**3. Run dev server**
-```
+### 3. Run the development server
+```bash
 npm run dev
 ```
 
-**4. Edit config**
+Visit `http://localhost:3000` in your browser.
+
+---
+
+## 🛠️ Customize Your Portfolio
+
+### 🔧 Config
+Modify the main configuration:
 ```
 src/app/resources/config
 ```
 
-**5. Edit content**
+### 📝 Content
+Edit personal information and page settings:
 ```
 src/app/resources/content
 ```
 
-**6. Create portfolio posts / projects**
+### 🖼️ Portfolio & Projects
+Add your work by creating `.mdx` files:
 ```
-Add a new .mdx file to src/app/portfolio/posts or src/app/work/projects
+src/app/portfolio/posts     ← for blog-style posts  
+src/app/work/projects       ← for project showcases
 ```
 
-# **Features**
+---
 
-## **Once UI**
-- All tokens, components & features of [Once UI](https://once-ui.com)
+## ✨ Features
 
-## **SEO**
-- Automatic open-graph and X image generation with next/og
-- Automatic schema and metadata generation based on the content file
+- ✅ Built with Once UI: Customizable components and design tokens
+- 🧠 Smart SEO: Auto-generated metadata and Open Graph images
+- 🖥️ Responsive Design: Works on all screen sizes
+- 🧩 Modular: Enable/disable pages (portfolio, work, gallery, about)
+- 🔐 Private Features: Optional password protection for URLs
+- 🌐 Localized (optional): Use `i18n` branch if needed
 
-## **Design**
-- Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+---
 
-## **Content**
-- Render sections conditionally based on the content file
-- Enable or disable pages for portfolio, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
+## 👤 Author
 
-## **Localization**
-- A localized version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
+**Tamanna Mishra**
 
-# **Authors**
+Social links are available on the portfolio website.  
+(Visit the "About" or footer section of the site.)
 
-Connect with us on Threads or LinkedIn.
+---
 
-Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
+## 📄 License
 
-Localization added by [François Hernandez](https://github.com/francoishernandez)
+This project is licensed under the **CC BY-NC 4.0 License**.
 
-# **Get involved**
+- 🔒 **Private use only** – commercial use is **not allowed**
+- ✍️ Attribution required
 
-- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
+See `LICENSE.txt` for full details.
 
-# **License**
+---
 
-Distributed under the CC BY-NC 4.0 License.
-- Commercial usage is not allowed.
-- Attribution is required.
+## 🧪 Deployment (Optional)
 
-See `LICENSE.txt` for more information.
+When you're ready to go live, consider deploying with [Vercel](https://vercel.com):
 
-# **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fcover.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio)
+
+---
+
+## 🙋‍♀️ Need Help?
+
+Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) for support or inspiration.
+
+```
+
+---
+
+Would you like me to help you deploy it on Vercel or guide you through that as your next step?
