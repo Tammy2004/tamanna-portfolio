@@ -1,7 +1,3 @@
-Thanks, Tamanna! Based on your details, here’s a polished, personalized `README.md` for your portfolio repository:
-
----
-
 ```markdown
 # **Tamanna Mishra – Developer Portfolio**
 
